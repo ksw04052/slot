@@ -26,35 +26,35 @@ function randBetween(min,max){
 function imgInfo(num){
     let img_src
     if(num == 1){
-        img_src = "am.png"
+        img_src = "./am.png"
     }
     else if(num == 2){
-        img_src = "cg.png"
+        img_src = "./cg.png"
     }
     else if(num == 3){
-        img_src = "rcg.png"
+        img_src = "./rcg.png"
     }
     else if(num == 4){
-        img_src = "rs.png"
+        img_src = "./rs.png"
     }
     else if(num == 5){
-        img_src = "rc.png"
+        img_src = "./rc.png"
     }
     else if(num == 6){
-        img_src = "bc.png"
+        img_src = "./bc.png"
     }
     else{
-        img_src = "ec.png"
+        img_src = "./ec.png"
     }
     return img_src
 }
 
 function pressed(){
-    slotImg.src = "slotc2.png"
+    slotImg.src = "./slotc2.png"
 }
 
 function released(){
-    slotImg.src = "slotc.png"
+    slotImg.src = "./slotc.png"
     lever.removeEventListener('mousedown',pressed)
     lever.removeEventListener('mouseup',released)
 
